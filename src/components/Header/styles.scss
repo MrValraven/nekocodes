@@ -1,0 +1,35 @@
+@use "../../styles/colors";
+
+header {
+  background-color: colors.$primaryColor;
+  color: colors.$secondaryColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+
+  .logo {
+    img {
+      width: 25px;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+  nav {
+    display: flex;
+    li {
+      list-style-type: none;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
